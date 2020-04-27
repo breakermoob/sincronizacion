@@ -43,6 +43,6 @@ Según lo anterior, la forma de pasar argumentos a la aplicación será la sigui
 Luego, ejecute varias veces la aplicación dejando constante el valor máximo del contador en 10000000 y el número de hilos en 4, pero cambiando el valor del umbral a los siguientes valores: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512 y 1024. ¿La gráfica sigue una tendencia similar a la mostrada en la figura **29.6** del texto guía (la cual se muestra a continuación)?
 
  * **R:** 
-![Resultado E2 número de CPUs](E4/4.png)
+![Resultado E2 número de CPUs](E6/6.png)
 
 ![fig_S](fig_S.jpg)
