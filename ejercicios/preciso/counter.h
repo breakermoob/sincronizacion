@@ -12,5 +12,6 @@ void init(counter_t *c);
 void increment(counter_t *c);
 void decrement(counter_t *c);
 int get(counter_t *c);
+void killGet(counter_t *c);
 
 #endif

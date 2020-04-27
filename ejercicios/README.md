@@ -14,9 +14,13 @@
    * **R:** Como podemos ver en la imagen el tiempo mas corto es 0, esto nos pone a pensar que tal vez la maquina en la cual estamos ejecutando este código es mucho mejor que la función, por lo cuál esa no esta en condiciones de medir el tiempo de ejecución.
 2. Consulte cuantas CPUs hay disponibles en el sistema que usted está utilizando. (Pista use el comando lscpu)
    * **R:** Como podemos ver en la siguiente figura, el número de CPUs es **4**
-   ![Resultado E2 número de CPUs](E2/2-nCPUs.png)
+   ![Resultado E2 número de CPUs](E2/2.png)
 3. Desarrolle un programa que utilice un contador concurrente simple. Mida cuánto tiempo lleva incrementar el contador muchas veces a medida que aumenta el número de hilos (1, 2, 4, 8 y 16). Para tal fin, siga las instrucciones que aparecen en el directorio [preciso](./preciso). Una vez complete los pasos continue con el tercer punto.
+   * **R:**
+   ![Resultado E2 número de CPUs](E3/3.png)
 4. Desarrolle una versión del contador aproximado (*sloppy counter*) y mida su desempeño a medida que se varía el número de hilos. En este caso, solo maneje un umbral de S = 1024 variando el número de hilos (1, 2, 4, 8 y 16). Las intrucciones para ello se encuentran en el directorio [aproximado](./aproximado).
+   * **R:** 
+   ![Resultado E2 número de CPUs](E4/4.png)
 5. Grafique los resultados obtenidos de las pruebas recopiladas (en las tablas) para el **número de hilos .vs. el tiempo (en segundos)**, estas siguen la tendencia de la figura **29.5** del libro (la cual se muestra a continuación):
 
 ![fig_performance](fig_performance.jpg)
@@ -37,5 +41,8 @@ Según lo anterior, la forma de pasar argumentos a la aplicación será la sigui
 ```
 
 Luego, ejecute varias veces la aplicación dejando constante el valor máximo del contador en 10000000 y el número de hilos en 4, pero cambiando el valor del umbral a los siguientes valores: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512 y 1024. ¿La gráfica sigue una tendencia similar a la mostrada en la figura **29.6** del texto guía (la cual se muestra a continuación)?
+
+ * **R:** 
+![Resultado E2 número de CPUs](E4/4.png)
 
 ![fig_S](fig_S.jpg)
