@@ -22,6 +22,8 @@ void decrement(counter_t *c) {
 int get(counter_t *c) {
     pthread_mutex_lock(&c->lock);
     return c->value;
-    pthread_mutex_unlock(&c->lock);
 }
 
+void killGet(counter_t *c){
+    pthread_mutex_unlock(&c->lock);
+}
