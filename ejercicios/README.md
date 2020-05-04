@@ -26,8 +26,13 @@
 ![fig_performance](fig_performance.jpg)
 
    * ¿Los valores que usted obtuvo siguen una tendencia como la que se muestra en el texto guía (mostrada anteriormente)?
+   * **R:** En el caso del contador simple podemos ver una tendencia de aumento, pero el contador aproximado se comporta de forma muy dierente, dado que si tiempo de ejecución no tiende a cero. 
+   ![Gráfica de los contadores anteriores](E5/g.png)
    * ¿Cuántas CPUs hay disponibles en el sistema que usted está utilizando?  
+   * **R:** Como vimos en el punto número 2 hay 4 CPUs, pero es el sistema operativo quien sabe si las utiliza, lo mas seguro es que si se esten utilizando las 4 para correr los hilos, dado que hay pocos procesos importantes en ejecición. 
    * ¿Este número afecta de alguna manera sus mediciones?
+   * **R:** Si, realizando algunas pruebas podemos notar que el tiempo de ejecución es muy variable y el número de CPUs influye en esto.
+   
 
 6. Mejore el archivo [test_aproximate_mejorado_counter.c](./aproximado_mejorado/test_aproximate_mejorado_counter.c) (el cual se encuentra en el directorio [aproximado_mejorado](./aproximado_mejorado)) de tal modo que, además de permitir modificar el numero de hilos y el valor máximo del contador a emplear, permita modificar también el umbral o factor de apromación (S), para esto se puede basar en el ejercicio 3. De este modo los parametros serán:
    * Umbral: ```APPROXIMATION_FACTOR```
@@ -46,3 +51,7 @@ Luego, ejecute varias veces la aplicación dejando constante el valor máximo de
 ![Resultado E2 número de CPUs](E6/6.png)
 
 ![fig_S](fig_S.jpg)
+
+![Resultado E2 número de CPUs](E6/g.png)
+
+**R:** La gráfica tiene una tendencia de caída, pero en nuestro caso es mucho mas pronunciada.
